@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 const fs = require("fs");
 
 const app = express();
-const port = 3000;
+const port = 3939;
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
