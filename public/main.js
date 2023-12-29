@@ -9,6 +9,9 @@ socket.on("availableSplatFilenames", (data) => {
 });
 
 let s = document.getElementById("filenameSelect");
+s.addEventListener("focus", (e) => {
+  e.preventDefault();
+});
 s.addEventListener("change", (ev) => {
   // console.log(ev);
   // console.log(s.value);
